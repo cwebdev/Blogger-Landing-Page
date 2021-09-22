@@ -155,6 +155,39 @@ body
     cursor: pointer;
 }
 
+.btnWrapper .navBtn {
+    height:40px;background-color:transparent;
+    color:white;border:none; cursor: pointer;font-size:18px;padding:10px
+}
+
+
+.btnWrapper .navBtn:hover {
+    background-color: white;
+    color:#df6975;        
+}
+
+.navListWrapper .navBtn
+{
+    border-radius: 20px;
+}
+
+.ctaButtonsWrapper .alternateBtn, .navListWrapper .alternateBtn
+{
+    background-color: white;
+    color: #fd7c86;
+}
+
+.navListWrapper .alternateBtn
+{
+    width:100px;
+}
+
+.ctaButtonsWrapper .alternateBtn:hover, .navListWrapper .alternateBtn:hover
+{
+    background-color: #fd7c86;
+    color: white;
+}
+
 .sectionTitle h1
 {
     text-align: center;
@@ -188,8 +221,7 @@ body
 
 .textBlock
 {
-    width:70%;
-    font-family: barlowFont;
+    width:70%;    
     margin-bottom: 40px;
     color:hsl(212, 27%, 19%);
     font-weight:600;
@@ -608,14 +640,19 @@ body
     .burgerIconWrapper {display: none;}   
     .mainHeading {width:80%;display: flex;}
     .mainNavMenuWrapper {display: flex;justify-content: space-evenly;margin-left:20px}
-    .navMenuElem {font-size:18px;text-align: center;}
-    .mainNavMenuWrapper .btnWrapper {width:100px;}
+    .navMenuElem {font-size:18px;text-align: center;display: flex;align-items:center}
+    .navMenuArrow {
+        height: 15px;
+        width: 15px;
+        background-image: url('../images/icon-arrow-light.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: 5px;
+    }
+    .mainNavMenuWrapper .btnWrapper {width:100px;margin-left:20px}
     .navListWrapper {width:20%; display: flex; flex-wrap: nowrap;justify-content:space-evenly;}    
     .btnWrapper {display: flex;flex-direction: column;justify-content: center;}    
-    .btnWrapper .navBtn {height:40px;background-color:transparent;
-        color:white;border:none; cursor: pointer;font-size:18px;padding:10px}
-    .btnWrapper .navBtn:hover {background-color: white;color:#df6975;
-        text-transform: capitalize;border-radius: 15px;}
 
     .sectionTitle{margin-top: 60px;font-size: 24px;}
 

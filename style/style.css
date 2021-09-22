@@ -1,16 +1,10 @@
-@font-face {
-	font-family: barlowFont;
-	src: url(../fonts/Barlow-Regular.ttf);
-    font-display: fallback;
-}
-
 * {
     box-sizing: border-box;
 }
 
 body
-{
-    font-family: barlowFont;
+{    
+    font-family: 'Overpass', sans-serif;
 }
 
 .mainWrapper
@@ -297,6 +291,47 @@ body
     background-image: url('../images/mobile/image-graphic-design.jpg');
     background-size: cover;    
 }
+
+
+
+.blogFooterWrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #24242c;
+    color: white;
+    border-top-right-radius: 100px;
+    text-align: center;
+}
+
+.footerContentList
+{
+    margin-bottom: 10px;
+}
+
+.footerContentList:last-child
+{
+    margin-bottom: 50px;
+}
+.footerContentList div
+{
+    margin-top: 5px;
+}
+
+.footerContentList h3:hover, .footerContentList div:hover
+{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
 
 .photographyImageWrapper
 {

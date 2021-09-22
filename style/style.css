@@ -16,6 +16,7 @@ body
     background-position: center;
     display: flex;
     flex-direction: column;    
+    border-bottom-left-radius: 100px;
 }
 
 .headingWrapper
@@ -34,6 +35,10 @@ body
 .mainHeading h3
 {
     margin-left: 20px;
+}
+
+.mainNavMenuWrapper {
+    display: none;
 }
 
 .burgerIconWrapper
@@ -592,11 +597,7 @@ body
     .col-s-12 {width: 100%;}
 
     .burgerIconWrapper {display: none;}
-    .mainWrapper {background-image: url('../images/bg-pattern-intro.svg');}
-    .transformImageWrapper {background-image: url('../images/desktop/image-transform.jpg');}
-    .graphicImageWrapper {background-image: url('../images/desktop/image-graphic-design.jpg');}
-
-    .photographyImageWrapper {background-image: url('../images/desktop/image-photography.jpg');}
+    .mainWrapper {background-image: url('../images/bg-pattern-intro.svg');height:450px;}
 
     .bigTextBlockWrapper {height: 500px;}
     .imageWrapper {height:500px;}
@@ -605,12 +606,47 @@ body
     .footerImage {height:300px;}
     .mainHeading h3 {margin-left: 40px;}
     .burgerIconWrapper {display: none;}   
-    .navListWrapper {width:30%; display: flex; flex-wrap: nowrap;justify-content:space-evenly;}
-    .btnWrapper {display: flex;flex-direction: column;justify-content: center;}
+    .mainHeading {width:80%;display: flex;}
+    .mainNavMenuWrapper {display: flex;justify-content: space-evenly;margin-left:20px}
+    .navMenuElem {font-size:18px;text-align: center;}
+    .mainNavMenuWrapper .btnWrapper {width:100px;}
+    .navListWrapper {width:20%; display: flex; flex-wrap: nowrap;justify-content:space-evenly;}    
+    .btnWrapper {display: flex;flex-direction: column;justify-content: center;}    
     .btnWrapper .navBtn {height:40px;background-color:transparent;
         color:white;border:none; cursor: pointer;font-size:18px;padding:10px}
-    .btnWrapper .navBtn:hover {background-color: white;color:black;
+    .btnWrapper .navBtn:hover {background-color: white;color:#df6975;
         text-transform: capitalize;border-radius: 15px;}
+
+    .sectionTitle{margin-top: 60px;font-size: 24px;}
+
+    .artRow {background-image: url(../images/bg-pattern-circles.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: inherit;
+        background-color: #33334b;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        height:400px;
+    }
+    
+    .standoutImageWrapper {top:-50px;width:50%;}
+    .standoutTextBlockWrapper {width:100%;top:0px;right:0px; height:400px;padding-top:0px}
+    .standoutTextBlockWrapper
+    {
+        background:none;
+    }
+    .transformImageWrapper {background-image: url('../images/illustration-editor-desktop.svg');
+        background-size: 80%;height:600px;background-position: 300px center;}
+    .transformTextBlockWrapper {height: 600px;}
+    .laptopImageWrapper {background-image: url('../images/illustration-laptop-desktop.svg');
+        background-size: cover;height:600px;background-position: -150px center;}
+    .laptopTextBlockWrapper {height: 600px;justify-content:left;}
+    .graphicImageWrapper {background-image: url('../images/desktop/image-graphic-design.jpg');}
+    .photographyImageWrapper {background-image: url('../images/desktop/image-photography.jpg');}
+
+    .sectionTitle h1 {margin-bottom: 0px;}
+    .laptopRow {margin-top:40px;margin-bottom: 40px;}
+    .textBlock p, .textBlock h1 {text-align: left;}
   }
   
   @media only screen and (min-width: 1000px) {

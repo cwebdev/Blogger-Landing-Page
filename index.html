@@ -4,17 +4,167 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Blogr]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <title>Blogger landing page</title>
+  <link rel="stylesheet" href="style/style.css">     
 </head>
 <body>
+  <div class="mainWrapper row">
+    <div class="headingWrapper">
+      <div class="mainHeading">
+        <h3>Blogr</h3>
+      </div>
+      <div class="burgerIconWrapper">
+        <div class="burgerIcon"></div>
+      </div>
+      <div class="navListWrapper">
+        <div class="btnWrapper"><button class="navBtn">About</button></div>
+        <div class="btnWrapper"><button class="navBtn">Services</button></div>
+        <div class="btnWrapper"><button class="navBtn">Projects</button></div>
+        <div class="btnWrapper"><button class="navBtn">Contact</button></div>        
+      </div>
+    </div>
+    <div class="mainTitle">
+      <div class="mainTitleTextWrapper">
+        <h1>A modern publishing platform</h1>
+        <h2>Grow your audience and build your online brand</h2>
+      </div>
+    </div>
+    <div class="ctaButtonsWrapper">
+      <button>Start for Free</button>
+      <button>Learn More</button>
+    </div>
+    <div class="dropdownMenuWrapper">
+      <div class="dropdownMenu">
+        <div class="dropdownMenuItem">About</div>
+        <div class="dropdownMenuItem">Services</div>
+        <div class="dropdownMenuItem">Projects</div>
+        <div class="dropdownMenuItem">
+          <div class="dropdownBtn">CONTACT</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sectionTitle row">
+    <h1>Designed for the future</h1>
+  </div>
+
+  <div class="banner row reverseWrap">    
+    <div class="textBlockWrapper col-6">
+      <div class="textBlock">
+        <h1>Introducing an extensible editor</h1>
+        <p class="textBlockDetails">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>        
+        <h1>Robust content management</h1>
+        <p class="textBlockDetails">Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+      </div>
+    </div>
+    <div class="imageWrapper transformImageWrapper col-6"></div>
+  </div>
+
+  <div class="banner row artRow">
+    <div class="imageWrapper standoutImageWrapper col-6"></div>
+    <div class="textBlockWrapper standoutTextBlockWrapper col-6">
+      <div class="textBlock">
+        <h1>State of the Art Infrastructure</h1>
+        <p class="textBlockDetails">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>        
+      </div>
+    </div>
+  </div>
+
+  <div class="banner row reverseWrap">    
+    <div class="textBlockWrapper laptopTextBlockWrapper col-6">
+      <div class="textBlock">        
+        <h1>Free, open, simple</h1>
+        <p class="textBlockDetails">Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>        
+        <h1>Powerful tooling</h1>
+        <p class="textBlockDetails">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+      </div>
+    </div>
+    <div class="imageWrapper laptopImageWrapper col-6"></div>
+  </div>
+
+<!--
+  <div class="banner row">
+    <div class="bigTextBlockWrapper col-6 graphicImageWrapper">
+      <div class="textBlock">
+        <h1>Graphic design</h1>
+        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+      </div>
+    </div>
+    <div class="bigTextBlockWrapper col-6 photographyImageWrapper">
+      <div class="textBlock">
+        <h1>Photography</h1>
+        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="testimonials row">
+    <h2 class="testimonialsHeading">CLIENT TESTIMONIALS</h2>
+    <div class="testimonialsWrapper">
+      <div class="testimonial col-4">
+        <div class="logoBg logoEmily">
+        </div>
+        <p class="testimonialText">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        <p class="clientName">Emily R.</p>
+        <p class="clientPosition">Marketing Director</p>
+      </div>
+      <div class="testimonial col-4">
+        <div class="logoBg logoThomas">
+        </div>
+        <p class="testimonialText">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+        <p class="clientName">Thomas S.</p>
+        <p class="clientPosition">Chief Operating Officer</p>
+      </div>
+      <div class="testimonial col-4">
+        <div class="logoBg logoJenny">
+        </div>
+        <p class="testimonialText">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <p class="clientName">Jennie F.</p>
+        <p class="clientPosition">Business Owner</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerImagesWrapper row">
+    <div class="mainFooterWrapper col-12">
+      <div class="footerImageWrapper1 col-6">
+        <div class="footerImage footerImage1"></div>
+        <div class="footerImage footerImage2"></div>
+      </div>
+      <div class="footerImageWrapper2 col-6">
+        <div class="footerImage footerImage3"></div>
+        <div class="footerImage footerImage4"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footerSection row">
+    <h2>sunnyside</h2>
+    <div class="bottomMenuWrapper">
+      <div class="bottomMenu">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+      </div>
+    </div>
+    <div class="logosFlexWrapper">
+      <div class="logosWrapper">
+        <div class="logo facebook"></div>
+        <div class="logo instagram"></div>
+        <div class="logo twitter"></div>
+        <div class="logo pinterest"></div>
+      </div>
+    </div>
+  </div>
+-->
+
+  <!--
   Product
 
   Overview
@@ -90,7 +240,7 @@
   Contact
   Newsletter
   LinkedIn
-
+-->
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.

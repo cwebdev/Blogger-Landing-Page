@@ -2,6 +2,7 @@
 
 This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP).
 
+Live Site Link: https://cwebdev.github.io/Blogger-Landing-Page/
 ## Table of contents
 
 - [Overview](#overview)

@@ -51,8 +51,8 @@ body
 
 .burgerIcon
 {
-    height:45px;
-    width:45px;
+    height:35px;
+    width:35px;
     background-image: url('../images/icon-hamburger.svg');    
     background-size: 100%;
     background-repeat: no-repeat;
@@ -60,10 +60,15 @@ body
     cursor: pointer;
 }
 
+.burgerIcon.collapsed
+{
+    background-image: url('../images/icon-close.svg');   
+}
+
 .dropdownMenuWrapper
 {
     position: absolute;
-    top:80px;
+    top:90px;
     width: 96%;
     display: none;
 }
@@ -77,13 +82,14 @@ body
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 15px;
 }
 
 .dropdownMenuItem
 {
     text-align: center;
     font-size:20px;
-    padding:20px;
+    padding:15px;
     color:#878591;
     cursor: pointer;
 }
@@ -93,11 +99,23 @@ body
     font-size: 20px;
     color:#252c1b;
     border-radius: 25px;
-    background-color: #fbd601;
+    background-color: transparent;
     text-align: center;
-    width: 150px;
-    padding:20px;
+    width: 125px;
+    padding:5px;
     margin:auto;
+}
+
+.dropdownBtn:hover
+{    
+    background-color: #ff4b5c;
+    color:white;
+}
+
+.dropdownBtn.signUpBtn
+{
+    background-color: #ff4b5c;
+    color:white;
 }
 
 .navListWrapper
@@ -381,6 +399,46 @@ body
 {
     cursor: pointer;
 }
+
+.dropdownMenuItem .navMenuArrow
+{
+    height: 12px;
+    width: 15px;
+    background-image: url('../images/icon-arrow-dark.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.dropdownMenuItem.collapsed .navMenuArrow
+{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.dropdownMenuItem.dividerLine
+{
+    height:0px;
+    border-top:3px solid #efeff1;
+    padding:0px;
+    width:80%;
+    margin:auto;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -677,7 +735,11 @@ body
     }
     .navMenuElem.collapsed .navMenuArrow
     {
-        background-image: url('../images/icon-arrow-dark.svg');
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
     }
 
     .mainNavMenuWrapper .btnWrapper {width:100px;margin-left:20px}

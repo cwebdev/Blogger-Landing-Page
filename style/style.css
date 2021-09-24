@@ -94,6 +94,11 @@ body
     cursor: pointer;
 }
 
+.dropdownMenuBtnItem
+{
+    padding:10px;
+}
+
 .dropdownBtn
 {
     font-size: 20px;
@@ -116,6 +121,20 @@ body
 {
     background-color: #ff4b5c;
     color:white;
+}
+
+.mobileDropdownMenuWrapper
+{
+    display: none;
+    margin-top: 10px;
+    background-color: #efeff1;
+    border-radius: 10px;
+}
+
+.mobileDropDownMenuElem
+{
+    padding-top:10px;
+    padding-bottom: 7px;
 }
 
 .navListWrapper

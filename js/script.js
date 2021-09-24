@@ -43,3 +43,35 @@ icon.onclick = function()
         x.style.display = "none";
     }
 }
+
+
+var menuItems = document.querySelectorAll('.dropdownMenuCollapseItem');
+for(var i = 0; i < menuItems.length;i++)
+{
+    menuItems[i].onclick = function()
+    {
+        var allMenuItems = document.querySelectorAll('.dropdownMenuCollapseItem');
+        for(var j = 0; j < allMenuItems.length;j++)
+        {
+            if(allMenuItems[j] != this)
+            {
+                allMenuItems[j].classList.remove('collapsed');
+                allMenuItems[j].children[2].style.display = "none";
+            }
+        }
+
+        var x = this.children[2];        
+        if (x.style.display === "none" || x.style.display === '')
+        {
+            this.classList.add('collapsed');
+            x.style.display = "block";
+        }
+        else
+        {
+            this.classList.remove('collapsed');
+            x.style.display = "none";
+        }
+    }
+}
+
+

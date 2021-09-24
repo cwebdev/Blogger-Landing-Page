@@ -21,16 +21,13 @@ A blogger landing page (responsive website) developed using HTML, CSS and JavaSc
 
 This landing page is developed in HTML5, CSS3 and JavaScript from PSD design. Page is responsive in web and mobile screens. Site performs very well in Google lighthouse performance metrics.
 
-### Screenshot
+### Desktop Screenshot
 
-
-#### Active States Screenshot
-
-
+![](./Blogger_Desktop_Screen.png)
 
 #### Mobile Screenshot
 
-
+![](./Blogger_Mobile_Screen.png)
 
 ### Links
 
